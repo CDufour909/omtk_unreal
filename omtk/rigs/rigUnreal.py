@@ -49,11 +49,11 @@ class RigUnreal(classRig.Rig):
         #
 
         # Build the scene root
-        if pymel.objExists(self.nomenclature.scalar_root_name):
-            self.scene_root = pymel.PyNode(self.nomenclature.scalar_root_name)
-        else:
-            self.scene_root = pymel.joint(name=self.nomenclature.scalar_root_name)
-            self.scene_root.attr("jointOrientX").set(-90)
+        #if pymel.objExists(self.nomenclature.scalar_root_name):
+        #    self.scene_root = pymel.PyNode(self.nomenclature.scalar_root_name)
+        #else:
+        #    self.scene_root = pymel.joint(name=self.nomenclature.scalar_root_name)
+        #    self.scene_root.attr("jointOrientX").set(-90)
             # Setup the scalar root
 
     def post_build(self):
